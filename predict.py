@@ -44,6 +44,6 @@ import joblib
 from utils import *
 
 df_pre = pd.read_csv('Result/df_predict.csv')
-df_pre = df_pre[['Longitude','Latitude','type_propriete','NbChambres','Capacite_accueil','Desc_pre','Titre_pre','Reg_pre']]
+df_pre = df_pre[['Longitude','Latitude','Type_logement','type_propriete','NbChambres','Capacite_accueil','Desc_pre','Titre_pre','Reg_pre']]
 
 prixNuitee_1,y_1,prixNuitee_2,y_2 = predict_Adv(df_pre)
